@@ -1,1 +1,224 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "../node_modules/quill/dist/quill.core.css";
+@import "../node_modules/quill/dist/quill.snow.css";
+
+body {
+  margin: 0px;
+}
+
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('./assets/fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-BoldItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto-BoldItalic'), url('./assets/fonts/Roboto-BoldItalic.ttf') format('truetype');
+}
+
+
+
+@font-face {
+  font-family: "Roboto-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto-Medium'), url('./assets/fonts/Roboto-Medium.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Roboto-MediumItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto-MediumItalic'), url('./assets/fonts/Roboto-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto-Regular'), url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto-Light'), url('./assets/fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-LightItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto-LightItalic'), url('./assets/fonts/Roboto-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto-Italic'), url('./assets/fonts/Roboto-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto-Thin'), url('./assets/fonts/Roboto-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-ThinItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto-ThinItalic'), url('./assets/fonts/Roboto-ThinItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto-Black'), url('./assets/fonts/Roboto-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-BlackItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto-BlackItalic'), url('./assets/fonts/Roboto-BlackItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'proximanova-regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('proximanova-regular'), url('./assets/fonts/proximanova-regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'proximanova-medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('proximanova-medium'), url('./assets/fonts/proximanova-medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'proximanova-semiBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('proximanova-semiBold'), url('./assets/fonts/proximanova-semibold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'proximanova-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('proximanova-Bold'), url('./assets/fonts/proximanova-bold.otf') format('opentype');
+}
+
+// Add Quill font picker styles
+.ql-snow .ql-picker.ql-font {
+  .ql-picker-label::before,
+  .ql-picker-item::before {
+    content: 'Regular';
+  }
+
+  // Roboto Variants
+  .ql-picker-label[data-value="Roboto-Regular"]::before,
+  .ql-picker-item[data-value="Roboto-Regular"]::before {
+    content: 'Roboto Regular';
+    font-family: 'Roboto-Regular';
+  }
+
+  .ql-picker-label[data-value="Roboto-Bold"]::before,
+  .ql-picker-item[data-value="Roboto-Bold"]::before {
+    content: 'Roboto Bold';
+    font-family: 'Roboto-Bold';
+  }
+
+  .ql-picker-label[data-value="Roboto-Medium"]::before,
+  .ql-picker-item[data-value="Roboto-Medium"]::before {
+    content: 'Roboto Medium';
+    font-family: 'Roboto-Medium';
+  }
+
+  .ql-picker-label[data-value="Roboto-Light"]::before,
+  .ql-picker-item[data-value="Roboto-Light"]::before {
+    content: 'Roboto Light';
+    font-family: 'Roboto-Light';
+  }
+
+  .ql-picker-label[data-value="Roboto-Thin"]::before,
+  .ql-picker-item[data-value="Roboto-Thin"]::before {
+    content: 'Roboto Thin';
+    font-family: 'Roboto-Thin';
+  }
+
+  .ql-picker-label[data-value="Roboto-Black"]::before,
+  .ql-picker-item[data-value="Roboto-Black"]::before {
+    content: 'Roboto Black';
+    font-family: 'Roboto-Black';
+  }
+
+  // Proxima Nova Variants
+  .ql-picker-label[data-value="proximanova-regular"]::before,
+  .ql-picker-item[data-value="proximanova-regular"]::before {
+    content: 'Proxima Nova';
+    font-family: 'proximanova-regular';
+  }
+
+  .ql-picker-label[data-value="proximanova-medium"]::before,
+  .ql-picker-item[data-value="proximanova-medium"]::before {
+    content: 'Proxima Nova Medium';
+    font-family: 'proximanova-medium';
+  }
+
+  .ql-picker-label[data-value="proximanova-semiBold"]::before,
+  .ql-picker-item[data-value="proximanova-semiBold"]::before {
+    content: 'Proxima Nova Semi Bold';
+    font-family: 'proximanova-semiBold';
+  }
+
+  .ql-picker-label[data-value="proximanova-Bold"]::before,
+  .ql-picker-item[data-value="proximanova-Bold"]::before {
+    content: 'Proxima Nova Bold';
+    font-family: 'proximanova-Bold';
+  }
+}
+
+// Font classes for the editor content
+.ql-font-Roboto-Regular {
+  font-family: 'Roboto-Regular';
+}
+.ql-font-Roboto-Bold {
+  font-family: 'Roboto-Bold';
+}
+.ql-font-Roboto-Medium {
+  font-family: 'Roboto-Medium';
+}
+.ql-font-Roboto-Light {
+  font-family: 'Roboto-Light';
+}
+.ql-font-Roboto-Thin {
+  font-family: 'Roboto-Thin';
+}
+.ql-font-Roboto-Black {
+  font-family: 'Roboto-Black';
+}
+.ql-font-proximanova-regular {
+  font-family: 'proximanova-regular';
+}
+.ql-font-proximanova-medium {
+  font-family: 'proximanova-medium';
+}
+.ql-font-proximanova-semiBold {
+  font-family: 'proximanova-semiBold';
+}
+.ql-font-proximanova-Bold {
+  font-family: 'proximanova-Bold';
+}
